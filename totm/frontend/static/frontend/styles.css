@@ -1,0 +1,149 @@
+body {
+    padding-top: 65px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.next-turn {
+    position: absolute;
+    height: 25%;
+    width: 5%;
+    right: 1%;
+    top: 35%;
+}
+    
+.previous-turn {
+    position: absolute;
+    height: 25%;
+    width: 5%;
+    left: 1%;
+    top: 35%;
+}
+
+.turn-button-arrow {
+    height: 100%;
+    width: 100%;
+}
+
+.encounter-card {
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.encounter-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.name-tag {
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.name-tag:hover {
+    transform: scale(1.02);
+    background-color: #f7f7f7;
+}
+
+.shrink {
+    transform: scale(0.93, 0.93)
+}
+
+.name-tag-glow {
+    background-color: #f7f7f7;
+    box-shadow:
+    0 0 5px 5px #0d6efd; 
+}
+
+.Toastify__toast:hover {
+    box-shadow:
+    0 0 5px 5px #0d6efd !important; 
+}
+
+
+.name-tag .delete-button, .encounter-card .delete-button {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.name-tag:hover .delete-button, .encounter-card:hover .delete-button {
+    visibility: visible;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat
+}
+
+.name-tag .collapse-button {
+    visibility: hidden;
+}
+
+.name-tag:hover .collapse-button {
+    visibility: visible;
+}
+
+.toggle {
+    transform-origin: center;
+    transform: rotate(270deg);
+    margin-left: -2% !important;
+    margin-right: -2% !important;
+}
+
+.toggle-box {
+    margin-left: -5% !important;
+    margin-right: -22% !important;
+}
+
+.quick-toggle {
+    margin-right: -3% !important;
+}
+
+.big-toggle {
+    transform-origin: center;
+    transform: rotate(270deg) scale(1.7)
+}
+
+.action-label {
+    position: absolute;
+    transform-origin: center;
+    transform: rotate(90deg) scale(0.8, 0.5) translateY(10%);
+
+}
+
+.rotate-270 {
+    transform-origin: center;
+    transform: rotate(270deg)
+}
+
+
+.menu-input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-60%) translateX(-50%);
+    width: 20px;
+    border: 0;
+    outline: none;
+}
+
+.no-pointer-events {
+    pointer-events: none;
+}
+
+.yes-pointer-events {
+    pointer-events: auto;
+}
+
+.turn-card-input {
+    border: none;
+    resize: none;
+}
+
+textarea:focus {
+    border-color: transparent;
+    box-shadow: none !important;
+    outline: none;
+}

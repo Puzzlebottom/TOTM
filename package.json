@@ -1,0 +1,42 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch ./totm/frontend/src/index.js --output-path ./totm/frontend/static/frontend/ --output-filename main.js --devtool source-map",
+    "build": "webpack --mode production ./totm/frontend/src/index.js --output-path ./totm/frontend/static/frontend/ --output-filename main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/runtime": "^7.21.0",
+    "assert": "^2.0.0",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "redux-devtools-extension": "^2.13.9",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.2",
+    "axios": "^1.3.2",
+    "buffer": "^6.0.3",
+    "clsx": "^1.2.1",
+    "express": "^4.18.2",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.1",
+    "react-toastify": "^9.1.1",
+    "redux": "^4.2.1",
+    "uuid": "^9.0.0",
+    "webpack": "^5.75.0"
+  }
+}
